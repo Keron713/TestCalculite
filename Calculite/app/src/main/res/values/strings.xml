@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Calculite</string>
+    <string name="addition">+</string>
+    <string name="subtraction">-</string>
+    <string name="multiplication">*</string>
+    <string name="degree">/</string>
+    <string name="selectOperation">Select operation:</string>
+    <string name="result">Result:</string>
+    <string name="getResult">Get result</string>
+    <string name="enter_nums">Please fill empty fields</string>
+    <string name="delete_zero">You cannot degree on zero number!</string>
+    <string name="cancel_operation">Operation canceled</string>
+    <string name="wrong_numbers">Wrong filled numbers</string>
+</resources>

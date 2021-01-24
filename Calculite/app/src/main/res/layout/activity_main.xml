@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Grey"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/operation_result"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="388dp"
+        android:background="@drawable/drawable_corners"
+        android:ellipsize="none"
+        android:textAlignment="center"
+        android:textColor="@color/TextBlack"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addition"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/drawable_corners"
+        android:text="@string/addition"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/subtraction"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_operation_text" />
+
+    <Button
+        android:id="@+id/subtraction"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/drawable_corners"
+        android:text="@string/subtraction"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/multiplication"
+        app:layout_constraintTop_toBottomOf="@+id/select_operation_text" />
+
+    <Button
+        android:id="@+id/multiplication"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/drawable_corners"
+        android:text="@string/multiplication"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/degree"
+        app:layout_constraintTop_toBottomOf="@+id/select_operation_text" />
+
+    <Button
+        android:id="@+id/degree"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/drawable_corners"
+        android:text="@string/degree"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_operation_text" />
+
+    <TextView
+        android:id="@+id/select_operation_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectOperation"
+        android:textColor="@color/TextBlack"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operation_result"
+        app:layout_constraintVertical_bias="0.605" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/result"
+        android:textColor="@color/TextBlack"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/operation_result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
